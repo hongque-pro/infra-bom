@@ -13,6 +13,11 @@ static Boolean isNotNullOrBlank(Object s) {
     return !(s == null || s.toString().trim().length() == 0)
 }
 
+static canBeSign(Project project) {
+    return isNotNullOrBlank(project.findProperty("signing.password")) &&
+            isNotNullOrBlank(project.findProperty('signing.secretKeyRingFile')) &&
+            isNotNullOrBlank(project.findProperty('signing.keyId'))
+}
 
 static getPropertyOrCmdArgs(Project project, String propertyName, String cmdArgName) {
     def propertyValue = project.hasProperty(propertyName) ? project.property(propertyName).toString() : null
@@ -33,6 +38,7 @@ subprojects {
 
     apply plugin: 'maven-publish'
     apply plugin: 'java-platform'
+    apply plugin: 'signing'
 
 
     javaPlatform {
@@ -73,18 +79,28 @@ subprojects {
                     }
                 }
 
-                repositories {
-                    // publish to private nexus
-                    // gradle -Du="username" -Dp='password' -Ds='http://your-nexus-address/repository/maven-releases/' publishMavenJavaPublicationToNexusRepository
-                    if (isNotNullOrBlank(u) && isNotNullOrBlank(p) && isNotNullOrBlank(s)) {
-                        maven {
-                            name = "nexus"
-                            url = s
-                            credentials {
-                                username = u
-                                password = p
-                            }
-                        }
+
+            }
+        }
+
+        signing {
+            if (canBeSign(project)) {
+                sign publishing.publications.mavenJava
+            } else {
+                println "Signing information missing/incomplete for ${project.name}"
+            }
+        }
+
+        repositories {
+            // publish to private nexus
+            // gradle -Du="username" -Dp='password' -Ds='http://your-nexus-address/repository/maven-releases/' publishMavenJavaPublicationToNexusRepository
+            if (isNotNullOrBlank(u) && isNotNullOrBlank(p) && isNotNullOrBlank(s)) {
+                maven {
+                    name = "nexus"
+                    url = s
+                    credentials {
+                        username = u
+                        password = p
                     }
                 }
             }
