@@ -31,7 +31,7 @@ subprojects {
     apply plugin: 'java-platform'
 
     group = 'com.labijie.bom'
-    version = '2.2.0'
+    version = '2.6.0'
 
 
     javaPlatform {

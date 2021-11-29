@@ -14,6 +14,8 @@ MyBatis
 Kryo    
 ...
 
+### 项目版本号和 spring boot 版本号保持一致 ！
+
 ## 使用方法
 ```groovy
 dependencies {
