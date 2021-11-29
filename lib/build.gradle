@@ -28,15 +28,12 @@ buildscript {
 
         apache_commons_text_version = '1.9'
 
-        elastic_version = '7.15.2'
-
         jackson_msgpack_version='0.9.0'
 
         cron_utils_version='9.1.6'
     }
 }
 
-//include https://github.com/spring-projects/spring-boot/blob/v2.6.0/spring-boot-project/spring-boot-dependencies/build.gradle
 dependencies {
     api platform("org.springframework:spring-framework-bom:${spring_version}")
     api platform("org.springframework.boot:spring-boot-dependencies:${spring_boot_version}")

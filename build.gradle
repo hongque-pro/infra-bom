@@ -93,3 +93,13 @@ subprojects {
     }
 }
 
+nexusPublishing {
+    repositories {
+        sonatype {
+            username = u
+            password = p
+        }
+    }
+}
+
+
