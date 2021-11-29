@@ -6,9 +6,8 @@ buildscript {
 }
 
 plugins {
-    id "io.github.gradle-nexus.publish-plugin" version "$publishing_plugin_version" apply true
+    id "io.github.gradle-nexus.publish-plugin" version "$publishing_plugin_version"
 }
-
 
 static Boolean isNotNullOrBlank(Object s) {
     return !(s == null || s.toString().trim().length() == 0)
