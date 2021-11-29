@@ -20,6 +20,11 @@ static getPropertyOrCmdArgs(Project project, String propertyName, String cmdArgN
     return isNotNullOrBlank(v) ? v : null
 }
 
+allprojects {
+    group = 'com.labijie.bom'
+    version = '2.6.0'
+}
+
 
 subprojects {
     def u = getPropertyOrCmdArgs(project, "PUB_USER", "u")
@@ -28,9 +33,6 @@ subprojects {
 
     apply plugin: 'maven-publish'
     apply plugin: 'java-platform'
-
-    group = 'com.labijie.bom'
-    version = '2.6.0'
 
 
     javaPlatform {
