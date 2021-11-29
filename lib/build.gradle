@@ -1,7 +1,5 @@
 buildscript {
     ext {
-        global_version = '2.1.0'
-
         kotlin_version = '1.6.0'
 
         curator_version = '5.2.0'
