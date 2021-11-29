@@ -20,12 +20,12 @@ static getPropertyOrCmdArgs(Project project, String propertyName, String cmdArgN
     return isNotNullOrBlank(v) ? v : null
 }
 
-def u = getPropertyOrCmdArgs(project, "PUB_USER", "u")
-def p = getPropertyOrCmdArgs(project, "PUB_PWD", "p")
-def s = getPropertyOrCmdArgs(project, "PUB_URL", "s")
-
 
 subprojects {
+    def u = getPropertyOrCmdArgs(project, "PUB_USER", "u")
+    def p =getPropertyOrCmdArgs(project, "PUB_PWD", "p")
+    def s = getPropertyOrCmdArgs(project, "PUB_URL", "s")
+
     apply plugin: 'maven-publish'
     apply plugin: 'java-platform'
 
@@ -93,6 +93,8 @@ subprojects {
 nexusPublishing {
     repositories {
         sonatype {
+            def u = getPropertyOrCmdArgs(project, "PUB_USER", "u")
+            def p =getPropertyOrCmdArgs(project, "PUB_PWD", "p")
             username = u
             password = p
         }
