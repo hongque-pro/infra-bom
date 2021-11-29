@@ -73,33 +73,25 @@ subprojects {
                 }
             }
         }
-
-
-
-        repositories {
-            // publish to private nexus
-            // gradle -Du="username" -Dp='password' -Ds='http://your-nexus-address/repository/maven-releases/' publishMavenJavaPublicationToNexusRepository
-            if (isNotNullOrBlank(u) && isNotNullOrBlank(p) && isNotNullOrBlank(s)) {
-                maven {
-                    name = "nexus"
-                    url = s
-                    credentials {
-                        username = u
-                        password = p
-                    }
-                }
-            }
-        }
     }
 }
 
-nexusPublishing {
-    repositories {
-        sonatype {
+if (isNotNullOrBlank(u) && isNotNullOrBlank(p) && isNotNullOrBlank(s)) {
+    nexusPublishing {
+        nexus {
+            snapshotRepositoryUrl = uri(s)
             username = u
             password = p
         }
     }
+}else{
+    nexusPublishing {
+        repositories {
+            sonatype()
+        }
+    }
 }
+
+
 
 
