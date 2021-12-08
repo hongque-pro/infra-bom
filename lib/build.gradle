@@ -58,7 +58,7 @@ dependencies {
 
 
         api "org.mybatis:mybatis:${mybatis_version}"
-        api "com.github.jsqlparser:jsqlparser: ${jsqlparser_version}"
+        api "com.github.jsqlparser:jsqlparser:${jsqlparser_version}"
         api "org.mybatis.spring.boot:mybatis-spring-boot-starter:$mybatis_starter_version"
         api "com.github.pagehelper:pagehelper:$mybatis_pagehelper_version"
         api "org.mybatis.dynamic-sql:mybatis-dynamic-sql:$mybatis_dynamic_sql_version"
