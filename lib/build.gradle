@@ -23,7 +23,7 @@ buildscript {
 
         kryo_version = '5.2.0'
 
-        mockito_version = '1.10.19'
+        mockito_version = '4.1.0'
 
         apache_commons_text_version = '1.9'
 
@@ -66,7 +66,7 @@ dependencies {
         api "org.mybatis.dynamic-sql:mybatis-dynamic-sql:$mybatis_dynamic_sql_version"
         api "org.mybatis.generator:mybatis-generator-core:$mybatis_generator_version"
 
-        api "org.mockito:mockito-all:$mockito_version"
+        api "org.mockito:mockito-core:$mockito_version"
 
         api "com.esotericsoftware:kryo:$kryo_version"
 
