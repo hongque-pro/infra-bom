@@ -27,7 +27,7 @@ static getPropertyOrCmdArgs(Project project, String propertyName, String cmdArgN
 
 allprojects {
     group = 'com.labijie.bom'
-    version = '2.6.3'
+    version = '2.6.4'
 }
 
 
