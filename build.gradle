@@ -1,3 +1,4 @@
+import java.time.Duration
 
 buildscript {
     ext {
@@ -116,6 +117,14 @@ nexusPublishing {
             username = u
             password = p
         }
+    }
+    connectTimeout = Duration.ofMinutes(5)
+    clientTimeout = Duration.ofMinutes(5)
+
+
+    transitionCheckOptions {
+        maxRetries = 100
+        delayBetween = Duration.ofSeconds(5)
     }
 }
 
