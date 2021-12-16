@@ -120,12 +120,12 @@ nexusPublishing {
     }
     connectTimeout = Duration.ofMinutes(5)
     clientTimeout = Duration.ofMinutes(5)
-
-
-    transitionCheckOptions {
-        maxRetries = 100
-        delayBetween = Duration.ofSeconds(5)
-    }
+//
+//
+//    transitionCheckOptions {
+//        maxRetries = 100
+//        delayBetween = Duration.ofSeconds(5)
+//    }
 }
 
 
