@@ -30,6 +30,8 @@ buildscript {
         jackson_msgpack_version='0.9.0'
 
         cron_utils_version='9.1.6'
+
+        log4j_version='2.16.0'
     }
 }
 
@@ -38,6 +40,8 @@ dependencies {
     api platform("org.springframework.boot:spring-boot-dependencies:${spring_boot_version}")
     api platform("org.springframework:spring-framework-bom:${spring_version}")
     api platform("org.springframework.security:spring-security-bom:${spring_security_version}")
+    api platform("org.apache.logging.log4j:log4j-bom:${log4j_version}")
+
     constraints {
         api "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"
 
