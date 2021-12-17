@@ -3,7 +3,7 @@ plugins {
 }
 
 allprojects {
-    group = "com.labijie.orm"
+    group = "com.labijie.bom"
     version = "2.6.4"
     infra(isBom = true) {
         useDefault {
