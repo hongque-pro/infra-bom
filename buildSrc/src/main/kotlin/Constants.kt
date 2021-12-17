@@ -22,7 +22,7 @@ object Versions {
 
    const val jsqlparser_version = "4.2"
 
-   const val kryo_version = "5.2.0"
+   const val kryo_version = "5.2.1"
 
    const val mockito_version = "4.1.0"
 
