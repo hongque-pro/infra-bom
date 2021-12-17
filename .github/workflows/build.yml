@@ -37,5 +37,5 @@ jobs:
         run: gradle build
       - name: Publish to Maven Central
         run: gradle publishToSonatype closeAndReleaseSonatypeStagingRepository
-      - name: Publish to Maven Central
+      - name: Publish to GitHub Packages
         run: gradle publishToGitHubPages
