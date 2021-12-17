@@ -3,6 +3,8 @@ plugins {
 }
 
 allprojects {
+    group = "com.labijie.orm"
+    version = "2.6.4"
     infra(isBom = true) {
         useDefault {
             useMavenProxy = false
