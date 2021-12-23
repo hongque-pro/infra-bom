@@ -4,7 +4,8 @@ plugins {
 
 allprojects {
     group = "com.labijie.bom"
-    version = "2.6.4"
+    version = "2.6.5"
+
     infra(isBom = true) {
         useDefault {
             useMavenProxy = false
@@ -15,7 +16,7 @@ allprojects {
 
 
 subprojects {
-    infra {
+    infra(isBom = true) {
         if (!project.name.startsWith("dummy")) {
             usePublish {
                 description = "maven bom project"
