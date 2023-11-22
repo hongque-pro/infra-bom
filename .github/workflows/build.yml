@@ -38,6 +38,6 @@ jobs:
       - name: Build with Gradle
         run: gradle build
       - name: Publish to GitHub Packages
-        run: gradle publishToGitHubPackages -Pgpr.user=$GITHUB_ACTOR -Pgpr.key=$GITHUB_TOKEN
+        run: gradle publishToGitHubPackages
       - name: Publish to Maven Central
         run: gradle publishToSonatype closeAndReleaseSonatypeStagingRepository

@@ -1,7 +1,7 @@
 # 基础组件包
 
 ![maven central version](https://img.shields.io/maven-central/v/com.labijie.bom/lib-dependencies?logo=java)
-![workflow status](https://img.shields.io/github/workflow/status/hongque-pro/infra-bom/Gradle%20Build%20And%20Release/main?logo=github)
+![workflow status](https://img.shields.io/github/actions/workflow/status/hongque-pro/infra-bom/build.yml?branch=main)
 ![license](https://img.shields.io/github/license/hongque-pro/infra-bom?style=flat-square)
 
 用于固定开发依赖的版本, 包含:   
