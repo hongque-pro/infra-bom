@@ -9,6 +9,7 @@ dependencies {
 
     constraints {
         api("org.jetbrains.kotlin:kotlin-allopen:${Versions.kotlin_version}")
+        api("org.jetbrains.kotlin:kotlin-allopen:${Versions.kotlin_version}")
 
         api("com.cronutils:cron-utils:${Versions.cron_utils_version}")
 
@@ -36,6 +37,7 @@ dependencies {
         api("org.mybatis.generator:mybatis-generator-core:${Versions.mybatis_generator_version}")
 
         api("org.mockito:mockito-core:${Versions.mockito_version}")
+        api("org.mockito:mockito-junit-jupiter:${Versions.mockito_version}")
 
         api("com.esotericsoftware:kryo:${Versions.kryo_version}")
 

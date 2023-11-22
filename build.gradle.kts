@@ -1,16 +1,18 @@
 plugins {
- id("com.labijie.infra") version Versions.infraPlugin apply false
+ id("com.labijie.infra") version Versions.infraPlugin apply true
 }
 
 allprojects {
     group = "com.labijie.bom"
-    version = "2.6.5"
+    version = Versions.spring_boot_version
 
     infra(isBom = true) {
         useDefault {
             useMavenProxy = false
+            addHongQueGitHubPackages()
         }
-        useNexusPublish()
+        usePublishPlugin()
+
     }
 }
 
@@ -18,13 +20,13 @@ allprojects {
 subprojects {
     infra(isBom = true) {
         if (!project.name.startsWith("dummy")) {
-            usePublish {
-                description = "maven bom project"
-                githubUrl("hongque-pro", "infra-bom")
-                artifactId { p-> "${p.name}-dependencies" }
+            publishing {
+                pom {
+                    description = "maven bom project"
+                    githubUrl("hongque-pro", "infra-bom")
+                    artifactId { p-> "infra-dependencies" }
+                }
             }
-
-            useGitHubPackages("hongque-pro", "infra-bom")
         }
     }
 }
