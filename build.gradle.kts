@@ -2,6 +2,7 @@ plugins {
  id("com.labijie.infra") version Versions.infraPlugin apply true
 }
 
+
 allprojects {
     group = "com.labijie.bom"
     version = Versions.spring_boot_version
@@ -24,7 +25,7 @@ subprojects {
                 pom {
                     description = "maven bom project"
                     githubUrl("hongque-pro", "infra-bom")
-                    artifactId { p-> "infra-dependencies" }
+                    artifactId { p-> "${p.name}-dependencies" }
                 }
             }
         }

@@ -3,11 +3,13 @@
 dependencies {
     api(platform("org.springframework.cloud:spring-cloud-dependencies:${Versions.spring_cloud_version}"))
     api(platform("org.springframework.boot:spring-boot-dependencies:${Versions.spring_boot_version}"))
-    api(platform("org.springframework:spring-framework-bom:${Versions.spring_version}"))
-    api(platform("org.springframework.security:spring-security-bom:${Versions.spring_security_version}"))
+    // spring boot include springframe and spring security
+//    api(platform("org.springframework:spring-framework-bom:${Versions.spring_version}"))
+//    api(platform("org.springframework.security:spring-security-bom:${Versions.spring_security_version}"))
     api(platform("org.apache.logging.log4j:log4j-bom:${Versions.log4j_version}"))
 
     constraints {
+        api("org.springframework.boot:spring-boot-configuration-processor:${Versions.spring_boot_version}")
         api("org.jetbrains.kotlin:kotlin-allopen:${Versions.kotlin_version}")
         api("org.jetbrains.kotlin:kotlin-allopen:${Versions.kotlin_version}")
 

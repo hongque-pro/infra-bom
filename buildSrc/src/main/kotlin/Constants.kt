@@ -3,15 +3,13 @@ object Versions {
 
    const val kotlin_version = "1.9.20"
 
-   const val curator_version = "5.5.0'"
+   const val curator_version = "5.5.0"
    const val zk_version = "3.9.1" //curator 5.5.0 use 3.7.1
 
    const val protobuf_version = "3.25.1"
 
-   const val spring_version="6.1.0" //6.0.14
    const val spring_cloud_version = "2022.0.4"
    const val spring_boot_version = "3.1.5"
-   const val spring_security_version = "6.2.0"
 
    const val mybatis_starter_version = "3.0.2"
    const val mybatis_version = "3.5.14"
@@ -21,7 +19,7 @@ object Versions {
 
    const val jsqlparser_version = "4.7"
 
-   const val kryo_version = "5.5.1"
+   const val kryo_version = "5.5.0"
 
    const val mockito_version = "5.3.1"
 
