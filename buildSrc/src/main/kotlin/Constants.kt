@@ -1,7 +1,7 @@
 object Versions {
-   const val infraPlugin = "2.0.1"
+   const val infraPlugin = "2.0.2"
 
-   const val kotlin_version = "1.9.20"
+   const val kotlin_version = "1.9.21"
 
    const val curator_version = "5.5.0"
    const val zk_version = "3.9.1" //curator 5.5.0 use 3.7.1
@@ -9,7 +9,7 @@ object Versions {
    const val protobuf_version = "3.25.1"
 
    const val spring_cloud_version = "2022.0.4"
-   const val spring_boot_version = "3.1.5"
+   const val spring_boot_version = "3.2.0"
 
    const val mybatis_starter_version = "3.0.2"
    const val mybatis_version = "3.5.14"
