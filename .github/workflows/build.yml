@@ -7,7 +7,7 @@ env:
   GPG_KEY: ${{ secrets.MAVEN_SIGN_KEY }}
   GPG_PWD: ${{ secrets.MAVEN_SIGN_KEY_PWD }}
   MAVEN_USER: ${{ secrets.MAVEN_USER_NAME }}
-  MAVEN_PWD: ${{ secrets.MAVEN_USER_PWD }}
+  MAVEN_KEY: ${{ secrets.MAVEN_USER_PWD }}
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 on:
   workflow_dispatch:
