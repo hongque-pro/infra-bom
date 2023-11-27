@@ -27,6 +27,8 @@ subprojects {
                     githubUrl("hongque-pro", "infra-bom")
                     artifactId { p-> "${p.name}-dependencies" }
                 }
+
+                toGithubPackages("hongque-pro", "infra-bom")
             }
         }
     }
