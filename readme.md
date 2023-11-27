@@ -1,7 +1,7 @@
 # 基础组件包
 
 ![maven central version](https://img.shields.io/maven-central/v/com.labijie.bom/lib-dependencies?logo=java)
-![workflow status](https://img.shields.io/github/actions/workflow/status/hongque-pro/infra-bom/build.yml?branch=main)
+![workflow status](https://img.shields.io/github/actions/workflow/status/hongque-pro/infra-bom/build.yml)
 ![license](https://img.shields.io/github/license/hongque-pro/infra-bom?style=flat-square)
 
 用于固定开发依赖的版本, 包含:   
