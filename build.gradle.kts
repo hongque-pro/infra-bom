@@ -10,10 +10,8 @@ allprojects {
     infra(isBom = true) {
         useDefault {
             useMavenProxy = false
-            addHongQueGitHubPackages()
+            //addHongQueGitHubPackages()
         }
-        usePublishPlugin()
-
     }
 }
 

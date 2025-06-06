@@ -26,9 +26,9 @@ dependencies {
         api("org.apache.curator:curator-x-async:${Versions.curator_version}")
         api("org.apache.curator:apache-curator:${Versions.curator_version}")
 
-        api("com.google.protobuf:protobuf-java:${Versions.protobuf_version}")
-
         api("org.msgpack:jackson-dataformat-msgpack:${Versions.jackson_msgpack_version}")
+
+        api("org.bouncycastle:bcprov-jdk18on:${Versions.bouncy_castle_version}")
 
 
         api("org.mybatis:mybatis:${Versions.mybatis_version}")
@@ -37,9 +37,6 @@ dependencies {
         api("com.github.pagehelper:pagehelper:${Versions.mybatis_pagehelper_version}")
         api("org.mybatis.dynamic-sql:mybatis-dynamic-sql:${Versions.mybatis_dynamic_sql_version}")
         api("org.mybatis.generator:mybatis-generator-core:${Versions.mybatis_generator_version}")
-
-        api("org.mockito:mockito-core:${Versions.mockito_version}")
-        api("org.mockito:mockito-junit-jupiter:${Versions.mockito_version}")
 
         api("com.esotericsoftware:kryo:${Versions.kryo_version}")
 
