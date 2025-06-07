@@ -1,5 +1,5 @@
 object Versions {
-   const val infraPlugin = "2.0.+"
+   const val infraPlugin = "2.1.+"
 
    const val kotlin_version = "2.1.21"
 
@@ -29,4 +29,6 @@ object Versions {
    const val cron_utils_version="9.2.1"
 
    const val log4j_version="2.24.3"
+
+   const val mockito_version="5.18.0"
 }

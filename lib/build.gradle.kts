@@ -7,6 +7,7 @@ dependencies {
 //    api(platform("org.springframework:spring-framework-bom:${Versions.spring_version}"))
 //    api(platform("org.springframework.security:spring-security-bom:${Versions.spring_security_version}"))
     api(platform("org.apache.logging.log4j:log4j-bom:${Versions.log4j_version}"))
+    api(platform("org.mockito:mockito-bom:${Versions.mockito_version}"))
 
     constraints {
         api("org.springframework.boot:spring-boot-configuration-processor:${Versions.spring_boot_version}")
