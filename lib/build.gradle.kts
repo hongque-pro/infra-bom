@@ -10,6 +10,7 @@ dependencies {
 //    api(platform("org.springframework:spring-framework-bom:${Versions.spring_version}"))
 //    api(platform("org.springframework.security:spring-security-bom:${Versions.spring_security_version}"))
     api(platform("org.apache.logging.log4j:log4j-bom:${Versions.log4j_version}"))
+    api(platform("com.squareup.okhttp3:okhttp-bom:${Versions.okhttp}"))
 
     constraints {
 
@@ -45,5 +46,6 @@ dependencies {
         api("com.esotericsoftware:kryo:${Versions.kryo_version}")
 
         api("org.apache.commons:commons-text:${Versions.apache_commons_text_version}")
+        api("io.grpc:grpc-netty:${Versions.grpc_netty}")
     }
 }

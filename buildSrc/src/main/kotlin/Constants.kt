@@ -7,7 +7,7 @@ object Versions {
    const val zk_version = "3.9.3" //curator 5.8.0 use 3.9.2
 
    const val spring_cloud_version = "2025.0.0"
-   const val spring_boot_version = "3.5.0"
+   const val spring_boot_version = "3.5.2"
 
    const val mybatis_starter_version = "3.0.4"
    const val mybatis_version = "3.5.19"
@@ -15,7 +15,7 @@ object Versions {
    const val mybatis_dynamic_sql_version = "1.5.2"
    const val mybatis_generator_version = "1.4.2"
 
-   const val bouncy_castle_version = "1.80"
+   const val bouncy_castle_version = "1.77"
 
    const val jsqlparser_version = "5.3"
 
@@ -31,4 +31,8 @@ object Versions {
    const val log4j_version="2.24.3"
 
    const val mockito_version="5.18.0"
+
+   const val okhttp="4.12.0"
+
+   const val grpc_netty="1.69.0"
 }
