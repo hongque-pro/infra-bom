@@ -34,5 +34,5 @@ object Versions {
 
    const val okhttp="4.12.0"
 
-   const val grpc_netty="1.69.0"
+   const val grpc="1.73.0"
 }
