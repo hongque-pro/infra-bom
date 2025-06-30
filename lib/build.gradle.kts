@@ -12,12 +12,13 @@ dependencies {
     api(platform("org.apache.logging.log4j:log4j-bom:${Versions.log4j_version}"))
     api(platform("com.squareup.okhttp3:okhttp-bom:${Versions.okhttp}"))
     api(platform("io.grpc:grpc-bom:${Versions.grpc}"))
+    api(platform("org.jetbrains.kotlin:kotlin-bom:${Versions.kotlin_version}"))
 
     constraints {
 
         api("org.springframework.boot:spring-boot-configuration-processor:${Versions.spring_boot_version}")
-        api("org.jetbrains.kotlin:kotlin-allopen:${Versions.kotlin_version}")
-        api("org.jetbrains.kotlin:kotlin-allopen:${Versions.kotlin_version}")
+//        api("org.jetbrains.kotlin:kotlin-allopen:${Versions.kotlin_version}")
+//        api("org.jetbrains.kotlin:kotlin-allopen:${Versions.kotlin_version}")
 
         api("com.cronutils:cron-utils:${Versions.cron_utils_version}")
 
