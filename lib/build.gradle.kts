@@ -36,6 +36,10 @@ dependencies {
         api("org.msgpack:jackson-dataformat-msgpack:${Versions.jackson_msgpack_version}")
 
         api("org.bouncycastle:bcprov-jdk18on:${Versions.bouncy_castle_version}")
+        api("org.bouncycastle:bcpkix-jdk18on:${Versions.bouncy_castle_version}")
+        api("org.bouncycastle:bcutil-jdk18on:${Versions.bouncy_castle_version}")
+        api("org.bouncycastle:bcpg-jdk18on:${Versions.bouncy_castle_version}")
+
 
 
         api("org.mybatis:mybatis:${Versions.mybatis_version}")

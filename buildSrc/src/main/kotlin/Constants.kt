@@ -15,12 +15,11 @@ object Versions {
    const val mybatis_dynamic_sql_version = "1.5.2"
    const val mybatis_generator_version = "1.4.2"
 
-   const val bouncy_castle_version = "1.77"
+   const val bouncy_castle_version = "1.81"
 
    const val jsqlparser_version = "5.3"
 
    const val kryo_version = "5.6.2"
-
 
    const val apache_commons_text_version = "1.13.1"
 
