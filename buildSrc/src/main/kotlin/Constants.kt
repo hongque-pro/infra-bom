@@ -7,7 +7,7 @@ object Versions {
    const val zk_version = "3.9.3" //curator 5.8.0 use 3.9.2
 
    const val spring_cloud_version = "2025.0.0"
-   const val spring_boot_version = "3.5.2"
+   const val spring_boot_version = "3.5.3"
 
    const val mybatis_starter_version = "3.0.4"
    const val mybatis_version = "3.5.19"
